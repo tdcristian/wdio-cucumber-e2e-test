@@ -60,7 +60,8 @@ export const config: Options.Testrunner = {
   capabilities: [
     {
       browserName: "chrome",
-      acceptInsecureCerts: true
+      acceptInsecureCerts: true,
+      timeouts: { implicit: 10000, pageLoad: 20000, script: 30000 },
     },
     // {
     //   browserName: "firefox",
